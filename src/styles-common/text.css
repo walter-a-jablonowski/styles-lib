@@ -1,0 +1,16 @@
+/* secondary */
+
+.secondary, .sec, .secondary a, .sec a {
+  color: #888;
+}
+
+/* highlight 1 */
+
+.highlight, .highlight a {
+  color: rgb(31, 181, 218);
+}
+
+.secondary .highlight, .secondary .highlight a,
+.sec .highlight, .sec .highlight a {
+  color: rgb(8, 93, 114);
+}

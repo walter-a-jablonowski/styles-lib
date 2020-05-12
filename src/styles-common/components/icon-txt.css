@@ -1,0 +1,13 @@
+/* icon */
+
+span.txt-icon {
+  margin-right:          2px;
+  border:                1px solid;
+  -webkit-border-radius: 3px;
+  -moz-border-radius:    3px;
+  -ms-border-radius:     3px;
+  border-radius:         3px;
+  padding:               3px;
+  vertical-align:        2px;
+  font-size:             0.55em;
+}

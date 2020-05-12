@@ -1,0 +1,167 @@
+/*@----------------------------------------------------------------------------
+|
+| Overview
+|
+|   - Info
+|   - Usage
+|
+|   - Common
+|   - Form
+|   - All form crls
+|   - Input, Textarea
+|   - Button
+|   - Check
+|   - Colors
+|
+----------------------------------------------------------------------------@*/
+
+
+/*@----------------------------------------------------------------------------
+| Info
+-------------------------------------------------------------------------------
+
+!!!!! Shoul stay minmal code !!!!! \
+!!!!! Larger projects: use colors as BS mod, dont re-invent the wheel !!!!!
+
+Use tag struct like "form vertical"
+
+REQUIRE:
+
+  - https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css
+
+TASKS:
+
+  - Check color doesnt work, source: https://codepen.io/walterjab/pen/vYNeWLP
+
+@*/
+
+
+/*@----------------------------------------------------------------------------
+| Usage
+-------------------------------------------------------------------------------
+
+Check
+
+<div class="check">
+  <input id="check2" name="check1" type="checkbox" />
+  <label for="check2">...</label>
+</div>
+
+@*/
+
+
+/*@----------------------------------------------------------------------------
+| Common
+----------------------------------------------------------------------------@*/
+
+*    {  box-sizing: border-box;  }
+body {  font-family: 'Questrial', Helvetica, sans-serif;  color: #fff;  -webkit-font-smoothing: antialiased;  }
+body {  background-color: #1d1e22;  }
+
+
+/*@----------------------------------------------------------------------------
+| Form
+----------------------------------------------------------------------------@*/
+
+/* Vertical form */
+
+.form.vertical input[type="text"],
+.form.vertical textarea,
+.form.vertical button.line,                  /* button is block with .line */
+.form.vertical .check.line,
+.form.vertical input[type="submit"].line  {
+  display: block;
+}
+
+.form.vertical:not(:first-child) input[type="text"],
+.form.vertical:not(:first-child) textarea,
+.form.vertical:not(:first-child) button,
+.form.vertical:not(:first-child) input[type="submit"]  {
+  margin-top: 11px;
+}
+
+
+/*@----------------------------------------------------------------------------
+| All form crls
+----------------------------------------------------------------------------@*/
+
+input[type="text"],
+textarea,
+button,
+input[type="submit"]  {
+  border:     1px solid rgba(0, 0, 0, 0.5);
+  padding:    4px 6px 5px 6px;
+  background: rgba(0, 0, 0, 0.25);
+  color:      rgba(255, 255, 255, 0.8);
+}
+
+/*@----------------------------------------------------------------------------
+| Input, Textarea
+----------------------------------------------------------------------------@*/
+
+input[type="text"].left {
+  margin-right: 11px;
+}
+
+input[type="text"], textarea {
+  width: 100%;  max-width: 450px;
+}
+
+
+/*@----------------------------------------------------------------------------
+| Button
+----------------------------------------------------------------------------@*/
+
+button, input[type="submit"] {
+  padding: 5px 6px 4px 6px;  /* vertical-align: bottom; */
+  font-size: 80%;
+  text-align: center;
+}
+
+button.large,
+input[type="submit"].large {
+  font-size: 100%;
+  padding: 4px 6px 5px 6px;
+}
+
+
+/* [placeholder]:focus::-webkit-input-placeholder {
+  color: transparent;  } */
+
+
+/*@----------------------------------------------------------------------------
+| Check
+----------------------------------------------------------------------------@*/
+
+.check {
+  position: relative;
+  display: inline-block;
+}
+
+.check input[type="checkbox"], check label {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/*
+.check input[type="checkbox"] {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  opacity: 0;
+}
+
+.check input[type="radio"]:checked {
+  content: '\f111';
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.8);
+}
+*/
+
+
+/*@----------------------------------------------------------------------------
+| Colors
+----------------------------------------------------------------------------@*/
+
+.gold     {  color: #FFC428;  }
+.bg-gold  {  background-color: #FFC428;  }
